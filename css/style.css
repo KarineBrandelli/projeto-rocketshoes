@@ -44,6 +44,10 @@ footer {
     color: #000;
 }
 
+/* .pesquisar {
+    padding: .3rem 0 .3rem .1rem;
+} */
+
 .preco {
     display: flex;
     flex-direction: column;
@@ -94,7 +98,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000;
 }
 
 .redesocial a {
