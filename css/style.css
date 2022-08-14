@@ -76,7 +76,18 @@ footer {
 }
 
 .images {
+    padding: 2rem;
     background-color: #C4C4C4;
+}
+
+.grande {
+    display: flex;
+    justify-content: center;
+}
+
+.pequenas {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .redesocial {
