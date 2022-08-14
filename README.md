@@ -14,6 +14,11 @@ This project was developed with the following technologies:
 - HTML
 - CSS
 
+## Additional features 
+
+We add the "responsive design" to make the project more accessible. You can access it by smartphone, tablet or
+Computer.
+
 ## Layout
 
 <p align="center">
