@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-/* :root {
-    --button: #FF0000;
-    --main-background:  #C4C4C4;
-    --background: #E5E5E5;
-    --text: #000;
-    --footer: #000;
-    --text-description: #9C9696;
-} */
-
 body {
     display: grid;
     grid-template-areas:
@@ -20,6 +11,7 @@ body {
     "aside main"
     "footer footer";
     width: 100vw;
+    font-family: 'Roboto';
 }
 
 header {
@@ -39,7 +31,64 @@ footer {
 }
 
 .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.preco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.preco h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
+.preco p {
+    font-size: 1.12rem;
+    color: #9C9696;
+}
+
+.preco h2 {
+    font-size: 2.5rem;
+}
+
+.preco button {
+    background-color: #FF0000;
+    border: none;
+    color: white;
+    padding: .8rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     font-family: 'Roboto';
-    font-size: 20px;
+}
+
+.images {
+    background-color: #C4C4C4;
+}
+
+.redesocial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.redesocial a {
+    text-decoration: none;
+    font-size: 1.12rem;
+    font-weight: 700;
 }
 
