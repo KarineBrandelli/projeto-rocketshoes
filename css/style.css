@@ -4,15 +4,42 @@
     box-sizing: border-box;
 }
 
-/* CORES ESPECIFICADAS NO PROJETO
-
-:root {
+/* :root {
     --button: #FF0000;
     --main-background:  #C4C4C4;
     --background: #E5E5E5;
     --text: #000;
     --footer: #000;
     --text-description: #9C9696;
+} */
+
+body {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+    width: 100vw;
 }
 
-*/
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.menu {
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
