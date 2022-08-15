@@ -10,7 +10,7 @@ body {
     "header header"
     "aside main"
     "footer footer";
-    width: 100vw;
+    width: 100%;
     font-family: 'Roboto';
     grid-template-columns: 1fr 2fr;
 }
@@ -46,7 +46,14 @@ footer {
 }
 
 .pesquisar {
-    padding: .5rem 0;
+    padding: .6rem;
+    border: 1px solid black;
+}
+.pesquisar input {
+    width: 10rem;
+    border: none;
+    margin-left: 1rem;
+    outline: none;
 }
 
 .preco {
@@ -117,7 +124,18 @@ footer {
 }
 
 .explore {
-    background-color: #FF0000;
+    background-color: #000;
     flex-basis: 20rem;
+    display: flex;
+    gap: 1rem;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
+.explore i {
+    color: white;
+}
+.explore a {
+    color: white;
+}
