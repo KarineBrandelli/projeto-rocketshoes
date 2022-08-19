@@ -5,7 +5,7 @@
 
 ## About
 
-The page represents an e-commerce of mini sports shoes. It was developed as a way to test the skills and knowledge developed in the Discover program, available for free on [Rocketseat](https://www.rocketseat.com.br/).
+The page represents an e-commerce of sports shoes. It was developed as a way to test the skills and knowledge developed in the Discover program, available for free on [Rocketseat](https://www.rocketseat.com.br/).
 
 ## Technologies
 
