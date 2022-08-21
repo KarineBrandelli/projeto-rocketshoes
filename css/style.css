@@ -35,7 +35,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem 0;
+    padding: 1rem 0 2rem;
 }
 
 .menu a {
@@ -65,7 +65,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 1.25rem;
-    padding: 10rem;
+    padding: 8.5rem 0;
+    margin: 0 8rem;
 }
 
 .preco h1 {
@@ -131,6 +132,10 @@ footer {
     justify-content: space-between;
 }
 
+.redesocial iframe {
+    height: 100%;
+}
+
 .redesocial a {
     text-decoration: none;
     font-size: 1.12rem;
@@ -154,3 +159,65 @@ footer {
 .explore a {
     color: white;
 }
+
+
+
+
+/* @media only screen and (max-width: 970px)  {
+    .hometexto {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .homeimage {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 821px)  {
+    .hometexto {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .homeimage {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 605px)  {
+    .hometexto {
+        max-width: 100%;
+    }
+
+    .homeimage {
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    article, section {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 604px) {
+    .menu-toggle {
+        display: none;
+    }
+} */
