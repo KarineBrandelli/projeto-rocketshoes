@@ -5,13 +5,16 @@
 }
 
 body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto';
+
     display: grid;
     grid-template-areas:
     "aside main"
     "footer footer";
-    width: 100%;
-    font-family: 'Roboto';
-    grid-template-columns: 1fr 2fr;
+
+    grid-template-columns: 1fr 1.8fr;
 }
 
 header {
@@ -25,17 +28,23 @@ aside {
 
 main {
     grid-area: main;
+
+    background-color: #9C9696;
 }
 
 footer {
     grid-area: footer;
 }
 
+
+/* HEADER NAV */
+
+
 .menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem 0 2rem;
+    padding: 2rem 0;
 }
 
 .menu-options {
@@ -46,7 +55,7 @@ footer {
 
 .menu-options a {
     text-decoration: none;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #000;
 }
@@ -66,13 +75,33 @@ footer {
     outline: none;
 }
 
+.menu-toggle {
+    display: none;
+    color :white;
+    background-color: black;
+    border: .1rem solid black;
+    border-radius: .35rem;
+    height: 2.5rem;
+    padding: .65rem 1.25rem;
+}
+
+
+/* ASIDE PREÇO */
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+}
+
 .preco {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 1.25rem;
-    padding: 8.5rem 0;
-    margin: 0 8rem;
+    padding: 5rem 1rem 0;
 }
 
 .preco h1 {
@@ -82,6 +111,7 @@ footer {
 
 .preco p {
     font-size: 1.12rem;
+    padding-top: 1rem;
     color: #9C9696;
 }
 
@@ -105,12 +135,35 @@ footer {
     align-items: center;
 }
 
+
+/* MAIN IMAGENS */
+
+
+main img {
+    max-width: 100%;
+}
+
+.images, .grande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images, .pequenas {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+    gap: .8rem;
+}
+
 .images {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #C4C4C4;
 }
+
 
 .grande {
     display: flex;
@@ -123,16 +176,17 @@ footer {
     gap: 1rem;
 }
 
-.active_image::after {
-    content: "";
-    top: 10px;
-    width: 100%;
-    height: 20px;
-    background-color: #FF0000;
-    position: relative;
+.allimages {
+    padding-top: 7rem;
 }
 
+
+/* FOOTER REDESOCIAL */
+
+
 .redesocial {
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -140,6 +194,7 @@ footer {
 
 .redesocial iframe {
     height: 100%;
+    display: block;
 }
 
 .redesocial a {
@@ -151,52 +206,38 @@ footer {
 
 .explore {
     background-color: #000;
-    flex-basis: 20rem;
     display: flex;
-    gap: 1rem;
-    height: 100%;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    flex-basis: 15rem;  
 }
 
 .explore i {
     color: white;
 }
+
 .explore a {
     color: white;
 }
 
-
-.menu-toggle {
+footer .fa-brands {
     display: none;
-    /* float: right; */
-    color :white;
-    background-color: black;
-    border: .1rem solid black;
-    border-radius: .35rem;
-    height: 2.5rem;
-    padding: .65rem 1.25rem;
+    font-size: 2rem;
 }
 
 
 
-
-
-@media only screen and (max-width: 1370px)  {
-    .images {
-        background-color: red;
-    }
-
-    .redesocial {
-        background-color: #FF0000;
-    }
-}
 
 @media only screen and (max-width: 1050px)  {
     .menu-options {
         gap: 2.5rem;
     }
 
+    .redesocial iframe {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 878px)  {
@@ -204,10 +245,12 @@ footer {
         display: none;
     }
 
-
+    .redesocial iframe {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 675px)  {
+@media only screen and (max-width: 699px)  {
     .menu-options {
         display: none;
     }
@@ -215,5 +258,33 @@ footer {
     .menu-toggle {
         display: block;
     }
+
+    .redesocial i {
+        display: block;
+    }
+
+    .redesocial a {
+        display: none;
+    }
+
+    body {
+        display: block;
+    }
+
+    .preco {
+        padding: 7rem 0 2rem;
+        
+    }
+
+    .redesocial {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2rem 0 2rem;
+    }
+
+    .explore {
+        padding: 2rem 0;
+    }
 }
+
 
