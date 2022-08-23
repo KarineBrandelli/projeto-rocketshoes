@@ -192,6 +192,7 @@ main img {
 }
 
 .pequenas a:hover {
+    margin-bottom: -.5rem;
     border-bottom: .5rem solid #FF0000;
     transition: .4s;
 }
