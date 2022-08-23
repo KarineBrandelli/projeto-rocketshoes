@@ -15,6 +15,7 @@ body {
     "footer footer";
 
     grid-template-columns: 1fr 1.8fr;
+    grid-template-rows: 6fr .5fr;
 }
 
 header {
@@ -28,8 +29,6 @@ aside {
 
 main {
     grid-area: main;
-
-    background-color: #9C9696;
 }
 
 footer {
@@ -60,6 +59,12 @@ footer {
     color: #000;
 }
 
+.menu a:hover {
+    border-left: .4rem solid #FF0000;
+    padding-left: .3rem;
+    transition: .3s;
+}
+
 .pesquisar {
     display: flex;
     align-items: center;
@@ -73,6 +78,11 @@ footer {
     width: 9rem;
     border: none;
     outline: none;
+}
+
+.pesquisar a {
+    text-decoration: none;
+    color: black;
 }
 
 .menu-toggle {
@@ -133,6 +143,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 14rem;
+    height: 3rem;
 }
 
 
@@ -154,13 +167,9 @@ main img {
     justify-content: space-evenly;
 
     width: 100%;
-    gap: .8rem;
 }
 
 .images {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: #C4C4C4;
 }
 
@@ -173,11 +182,18 @@ main img {
 .pequenas {
     display: flex;
     justify-content: space-evenly;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .allimages {
-    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pequenas a:hover {
+    border-bottom: .5rem solid #FF0000;
+    transition: .4s;
 }
 
 
@@ -204,6 +220,12 @@ main img {
     color: #000;
 }
 
+.redesocial a:hover {
+    border-left: .4rem solid #FF0000;
+    padding-left: .3rem;
+    transition: .3s;
+}
+
 .explore {
     background-color: #000;
     display: flex;
@@ -211,7 +233,7 @@ main img {
     align-items: center;
     height: 100%;
     gap: 1rem;
-    flex-basis: 15rem;  
+    flex-basis: 18rem;  
 }
 
 .explore i {
@@ -224,7 +246,7 @@ main img {
 
 footer .fa-brands {
     display: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 
@@ -263,7 +285,7 @@ footer .fa-brands {
         display: block;
     }
 
-    .redesocial a {
+    .text {
         display: none;
     }
 
