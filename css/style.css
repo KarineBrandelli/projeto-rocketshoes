@@ -58,9 +58,9 @@ footer {
 }
 
 .menu a:hover {
+  margin-left: -0.4rem;
   border-left: 0.4rem solid #ff0000;
-  padding-left: 0.3rem;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .fa-magnifying-glass {
